@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+     rel="stylesheet"
+   />
+   <link rel="stylesheet" href="style.css">
+   <title>Password Generator</title>
+</head>
+<body>
+   <div class="container">
+      <div class="display-container">
+         <div class="display">
+         </div>
+         <button class="copy">copy</button>
+      </div>
+      <div class="slider-container">
+         <input type="range" min="8" value="8" max="12" id="slider">
+         <label for="slider">0</label>
+      </div>
+      <div class="grid">
+         <div class="checkbox-container">
+            <input type="checkbox" id="small-letter">
+            <label for="small-letter">a-z</label>
+         </div>
+         <div class="checkbox-container">
+            <input type="checkbox" id="capital-letter">
+            <label for="capital-letter">A-Z</label>
+         </div>
+         <div class="checkbox-container">
+            <input type="checkbox" id="numbers">
+            <label for="numbers">0-9</label>
+         </div>
+         <div class="checkbox-container">
+            <input type="checkbox" id="special-keys">
+            <label for="special-keys">@
+               #$%</label>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

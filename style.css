@@ -1,0 +1,99 @@
+
+
+
+
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: 'Poppins',  'Times New Roman', Times, serif;
+}
+
+
+/*centrg the conatiner */
+.container {
+   display: grid;
+   place-content: center;
+   margin-top: 5rem;
+}
+
+
+/*styling the display and copy butoon */
+.display-container {
+   display: flex;
+   padding: 0;
+   border-radius: .5rem;
+}
+
+.display {
+   background-color: rgb(210, 206, 206);
+   width: 12rem;
+   height: 2.5rem;
+}
+
+
+.copy {
+   padding-inline: 1rem;
+   font-size: 1.2rem;
+   background-color: rgb(37, 208, 216);
+   border: none;
+   color: white;
+   cursor: pointer;
+}
+
+.copy:hover {
+   opacity: 0.5;
+}
+
+
+
+/* styling the slider */
+
+.slider-container {
+   margin-top: 1rem;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+#slider {
+   width: 13rem;
+}
+
+.slider-container label {
+   font-size: 1rem;
+   background-color: rgb(210, 206, 206);
+   padding: .3rem 1rem;
+   color: rgb(10, 8, 8);
+}
+
+
+
+/* styling the checkbxes*/
+
+.grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-top: 1rem;
+   gap: 1rem;
+}
+
+.checkbox-container {
+   background-color: rgb(210, 206, 206);
+   padding: 1rem 1.5rem;
+   border-radius: .5rem;
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   cursor: pointer;
+}
+
+.checkbox-container:hover {
+   background-color: grey;
+}
+
+.checkbox-container label {
+   cursor: pointer;
+}
+
+

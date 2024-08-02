@@ -21,27 +21,30 @@
       </div>
       <div class="slider-container">
          <input type="range" min="8" value="8" max="12" id="slider">
-         <label for="slider">0</label>
+         <label for="slider" class="slider-value">0</label>
       </div>
       <div class="grid">
          <div class="checkbox-container">
-            <input type="checkbox" id="small-letter">
+            <input type="checkbox" class="checkbox" checked id="small-letter">
             <label for="small-letter">a-z</label>
          </div>
          <div class="checkbox-container">
-            <input type="checkbox" id="capital-letter">
+            <input type="checkbox" class="checkbox" id="capital-letter">
             <label for="capital-letter">A-Z</label>
          </div>
          <div class="checkbox-container">
-            <input type="checkbox" id="numbers">
+            <input type="checkbox" class="checkbox" id="numbers">
             <label for="numbers">0-9</label>
          </div>
          <div class="checkbox-container">
-            <input type="checkbox" id="special-keys">
+            <input type="checkbox" class="checkbox" id="special-keys">
             <label for="special-keys">@
                #$%</label>
          </div>
       </div>
+      <button class="generate">generate</button>
    </div>
+
+   <script src="index.js"></script>
 </body>
 </html>

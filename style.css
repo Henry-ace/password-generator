@@ -29,6 +29,11 @@
    background-color: rgb(210, 206, 206);
    width: 12rem;
    height: 2.5rem;
+   border-top-left-radius: .5rem;
+   border-bottom-left-radius: .5rem;
+   padding-left: 1rem;
+   padding-top: .5rem;
+   font-size: 1.5rem;
 }
 
 
@@ -39,6 +44,8 @@
    border: none;
    color: white;
    cursor: pointer;
+   border-top-right-radius: .5rem;
+   border-bottom-right-radius: .5rem;
 }
 
 .copy:hover {
@@ -64,7 +71,7 @@
    font-size: 1rem;
    background-color: rgb(210, 206, 206);
    padding: .3rem 1rem;
-   color: rgb(10, 8, 8);
+   color: rgb(254, 254, 254);
 }
 
 
@@ -95,5 +102,25 @@
 .checkbox-container label {
    cursor: pointer;
 }
+
+
+
+/* styling the generate button*/
+
+.generate {
+   margin-top: 1rem;
+   height: 3rem;
+   color: white;
+   background-color: rgb(37, 208, 216);
+   border: none;
+   font-size: 1.5rem;
+   border-radius: .5rem;
+   cursor: pointer;
+}
+
+.generate:hover {
+   opacity: .5;
+}
+      
 
 

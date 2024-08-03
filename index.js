@@ -4,7 +4,7 @@
 
 /* variables */
 
-let dipslay = document.querySelector('.display');
+let display = document.querySelector('.display');
 let copyBtn = document.querySelector('.copy');
 let slider = document.querySelector('#slider');
 let sliderValue = document.querySelector('.slider-value');
@@ -13,6 +13,7 @@ let smallLetter = document.querySelector('#small-letter');
 let number = document.querySelector('#numbers');
 let specialKeys = document.querySelector('#special-keys');
 let generate = document.querySelector('.generate');
+let displayScreen = document.querySelector('#display-screen');
 
 /* arrays that sore password variation */
 
@@ -39,8 +40,6 @@ slider.addEventListener('input', () => {
 
 
 /* function to check what was checked and get random letters and symbols */
-
-
 function getRandomValue() {
 
    if(smallLetter.checked == true) {
@@ -85,18 +84,38 @@ function getRandomValue() {
 /* colect random element from password array and display them */
 function fetchPassword() {
    getRandomValue();
-
+   let value = ""
    for(let i = 0; i < slider.value; i++) {
-      let random = Math.floor(Math.random() * password.length) 
-      dipslay.innerHTML += (password[random]);
-      console.log(password[random]);
+      let random = Math.floor(Math.random() * password.length)
+      value += (password[random]);
    }
+
+   displayScreen.value = value;
 }
 
 
 
 /* event listener for the button */
+generate.addEventListener('click', () => {
+      fetchPassword()
+})
 
 
-generate.addEventListener('click', fetchPassword)
+/* event listener for the copy */
+
+copyBtn.addEventListener('click', () => {
+
+   displayScreen.select();
+   displayScreen.setSelectionRange(0, 99999)
+
+   document.execCommand('copy');
+   
+   copyBtn.innerHTML = 'Copied';
+
+   setTimeout(() => {
+      copyBtn.innerHTML = 'copy';
+   }, 2000
+)
+
+})
 

@@ -25,15 +25,16 @@
    border-radius: .5rem;
 }
 
-.display {
+#display-screen {
    background-color: rgb(210, 206, 206);
    width: 12rem;
    height: 2.5rem;
    border-top-left-radius: .5rem;
    border-bottom-left-radius: .5rem;
    padding-left: 1rem;
-   padding-top: .5rem;
-   font-size: 1.5rem;
+   padding-top: .4rem;
+   font-size: 1.2rem;
+   border: none;
 }
 
 
